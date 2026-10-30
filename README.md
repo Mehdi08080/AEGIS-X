@@ -1,17 +1,22 @@
 # AEGIS-X
 
-AEGIS-X is an independent cybersecurity and AI security intelligence platform that models digital trust, calculates potential exposure paths, evaluates AI-specific risk, and produces evidence-backed findings.
+AEGIS-X is an independent cybersecurity and AI security intelligence platform designed to model digital trust relationships, reason about exposure propagation, analyze AI-specific security risks, and generate evidence-backed findings.
 
-## Overview
+## Current status
 
-The project is designed around a native security intelligence engine instead of a wrapper around external tools. It integrates:
+This repository contains a real MVP foundation for a native security intelligence engine.
 
-- Security knowledge graph analysis
+## Core components
+
+- Security knowledge graph
 - Contextual attack path reasoning
-- AI security and trust-flow evaluation
+- AI security flow analysis
 - Behavioral anomaly analysis
-- Policy-aware evidence generation
-- Risk prioritization and reproducible assessment outputs
+- Evidence and confidence engine
+- Risk prioritization
+- FastAPI assessment API
+- SQLite-based findings persistence
+- CI/CD and Docker deployment primitives
 
 ## Quick start
 
@@ -23,12 +28,6 @@ pytest -q
 uvicorn aegis_x.api:app --reload
 ```
 
-## API
+## Repository
 
-- Health: `GET /health`
-- Assessment: `POST /run-assessment`
-- Findings: `GET /findings`
-
-## Implementation status
-
-This repository contains a real working MVP implementation of the core engine and assessment stack. It is intentionally designed to be modular, evidence-based, and reasonably secure.
+https://github.com/Mehdi08080/AEGIS-X
